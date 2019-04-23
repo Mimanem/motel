@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+:root {
+    --c-kupina: #9e0569;
+    --c-plava: #5c7da2;
+    --c-tamna: #1e2131;
+    --c-pozadinska: #f9f9f9;
+    --c-zuta: #f2b557;
+    --c-tekst: #f3f3ec;
+    --c-shadow: #03091d4f;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lora', sans-serif;
+    color: #03091d4f;
+    background-color: #f9f9f9!important;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: .8rem;
+    letter-spacing: 0.1px;
+    /* background: #f9f9f9; */
+}
+
+.navbar-brand img {
+    height: 2.3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar-nav li {
+    padding-right: .6rem;
+}
+
+.bg-light .navbar-light,
+.navbar-nav,
+.nav-link {
+    color: #1e2131;
+    padding-top: .8rem;
+}
+
+.navbar-light,
+.navbar-nav,
+.nav-link.active,
+.navbar-light,
+.navbar-nav,
+.nav-link:hover {
+    color: #f2b557;
+    text-shadow: #03091d4f;
+}
+
+.home-inner img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    /* background-image: url(img/beograd/Hram_Svetog_Save - Copy.jpg); */
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 60%;
+    color: #f2b557;
+    font-weight: 900;
+}
+
+.caption h1 {
+    font-weight: 500;
+}
+
+.btn-primary {
+    color: #1e2131;
+    background-color: #f2b557;
+    border-color: #f2b557
+}
+
+.btn-primary:hover {
+    color: #1e2131;
+    background-color: #f2b557;
+    border-color: #f2b557
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(0, 90, 90, 0.5)
+}
+
+.rozle {
+    background: #f2b557;
+    color: #1e2131;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+
+/* media queris */
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+
+/* ---bootstrap pading fix---*/
+
+[class*="col-"] {
+    padding: 1.2rem;
+}
+
+
+/* Extra small(xs) devices (phones, 576px and down)
+@media only screen and (max-width:576px) {...} 
+
+Small devices(sm) (portrait tablets and large phones, 576px and up)
+@media only screen and (min-width: 576px) {...} 
+
+Medium devices(md) (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...} 
+
+Large devices(lg) (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} 
+
+Extra large devices(xl) (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
