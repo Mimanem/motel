@@ -5,20 +5,259 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./src/css/motel.css">
     <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favikon/motel_sv_zuta/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favikon/motel_sv_zuta/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favikon/motel_sv_zuta/favicon-16x16.png">
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <script src="./src/js/motel.js"></script>
-    <script src="./src/js/main.js"></script>
+    <link rel="stylesheet" href="./src/css/motel.css">
+    <link rel="icon_xl" sizes="180x180" href="img/favikon/motel_sv_zuta/android-chrome-192x192.png">
+    <link rel="icon_m" type="image/png" sizes="32x32" href="img/favikon/motel_sv_zuta/favicon-32x32.png">
+    <link rel="icon_s" type="image/png" sizes="16x16" href="img/favikon/motel_sv_zuta/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>motel_index</title>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <div class="container">
+        <!-- pocetak homa -->
+        <div id="home"></div>
 
+        <!-- navigacija -->
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo-motel_belgrade.png" alt="brand_logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto"></ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#smestaj">Smeštaj</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restoran">Restoran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aktivnosti">Aktivnosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recenzije">Recenzije</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/galerija.html">Galerija</a>
+                    </li>
+
+                </div>
+            </div>
+
+
+        </nav>
+
+        <!-- kraj navigacije -->
+        <!-- pocetak lending strane -->
+        <div class="landing">
+            <div class="home-wrap">
+                <div class="home-inner">
+                    <img src="img/beograd/Hram_Svetog_Save - Copy.jpg" alt="backgraund">
+                </div>
+            </div>
+        </div>
+        <div class=" container caption text-center">
+            <h1 class="display-2">motelBelgrade</h1>
+            <a class=" btn btn-primary btn-lg" href="src/rezervacija.html">REZERVIŠI</a>
+        </div>
+        <!-- kraj lending strane -->
+        <!-- kraj homa -->
+
+        <!-- pocetak smestaja -->
+        <hr>
+
+        <div id="smestaj" class="container-fluid padding offset">
+            <div class="row padding rozle">
+                <div class="col-lg-7">
+                    <h2>Smeštaj</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum
+                    </p>
+                    <br>
+                    <a href="#" class="btn btn-primary">saznaj više</a>
+
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/smestaj/soba.jpg" class="img-fluid" alt="Smeštaj">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- kraj smestaja -->
+
+
+
+        <!-- pocetak restorana -->
+        <div id="restoran" class="container-fluid padding offset">
+            <div class="row padding rozle">
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                    <img src="img/restoran/restoran.jpg" class="img-fluid" alt="Restoran">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7"
+                >
+                    <h2>Restoran</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum
+                    </p>
+                    <br>
+                    <a href="#" class="btn btn-primary">saznaj više</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- kraj restorana -->
+
+
+
+        <!--pocetak aktivnosti  -->
+        <div id="aktivnosti" class="container-fluid padding offset">
+            <div class="row padding rozle ">
+                <div class="col-lg-7 ">
+                    <h2>Aktivnosti</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos
+                        numquam.
+                        Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo
+                        odit
+                        eos
+                        laboriosam rerum
+                    </p>
+                    <br>
+                    <a href="#" class="btn btn-primary">saznaj više</a>
+
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/beograd/savamala.jpg" class="img-fluid" alt="Aktivnosti">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- kraj aktivnosti -->
+
+
+
+        <!-- pocetak recenzija -->
+        <div id="recenzije" class="offset">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam.
+                Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit
+                eos
+                laboriosam rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam.
+                Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit
+                eos
+                laboriosam rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam.
+                Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit
+                eos
+                laboriosam rerum.</p>
+        </div>
+        <!-- kraj recenzija -->
+
+
+
+        <!-- pocetak kontakta/footer -->
+        <div id="kontakt" class="offset">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam.
+                Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit
+                eos
+                laboriosam rerum.</p>
+        </div>
+        <!--kraj kontakta  -->
+
+
+        <!-- GALERIJA NOVA STRANICA -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <header></header>
+
+    <main></main>
+
+    <footer></footer> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/motel.js"></script>
 </body>
 
 </html>
