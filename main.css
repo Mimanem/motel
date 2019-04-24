@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+:root {
+    --c-kupina: #471e39;
+    --c-plava: #5c7da2;
+    --c-tamna: #1e2131;
+    --c-pozadinska: #f9f9f9;
+    --c-zuta: #f2b557;
+    --c-tekst: #f3f3ec;
+    --c-shadow: #03091d4f;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lora', sans-serif;
+    color: #03091d !important;
+    background-color: #f9f9f9 !important;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: .8rem;
+    letter-spacing: 0.1px;
+}
+
+.navbar-brand img {
+    height: 2.3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar-nav li {
+    padding-right: .5rem;
+}
+
+.bg-light .navbar-light,
+.navbar-nav,
+.nav-link {
+    color: #1e2131;
+    padding-top: .8rem;
+}
+
+.navbar-light,
+.navbar-nav,
+.nav-link.active,
+.navbar-light,
+.navbar-nav,
+.nav-link:hover {
+    color: #f2b557;
+}
+
+
+/* .home-inner img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 1rem;
+} */
+
+.pozadinska_slika {
+    background-image: url("../../img/beograd/Hram_Svetog_Save_Backgraund.jpg");
+    width: 100%;
+    max-width: 100%;
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 60%;
+    color: #f2b557;
+}
+
+.caption h1 {
+    font-weight: 450;
+}
+
+.btn-rezervacija {
+    background-color: #f2b557 !important;
+    color: #1e2131 !important;
+    border: 1px solid #f2b557 !important;
+    border-radius: 4px !important;
+}
+
+.btn-rezervacija:hover,
+.btn-rezervacija:active {
+    background-color: #471e39 !important;
+    text-shadow: 3px 3px 6px #03091d4f !important;
+    box-shadow: 5px 5px 10px#03091d4f !important;
+    border: 1px solid#471e39 !important;
+    color: #f0ca92 !important;
+}
+
+.btn-strana {
+    background-color: #1e2131 !important;
+    color: #f0ca92 !important;
+    font-weight: 400;
+    border: 1px solid #1e2131!important;
+}
+
+.btn-strana:hover,
+.btn-strana:active {
+    font-weight: 500;
+    box-shadow: 5px 5px 10px#03091d4f !important;
+    background-color: #471e39 !important;
+}
+
+.rozle {
+    background: #f2b557;
+    color: #1e2131;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.margina-top {
+    margin-top: 1.5rem;
+}
+
+.img-fluid {
+    box-shadow: 5px 5px 5px#03091d2f;
+    border-radius: 2px;
+    border: 10px solid #03091d5f;
+}
+
+.tamna {
+    background: #471e39;
+    color: #f9f9f9;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.tamni-tekst {
+    color: #1e2131 !important;
+}
+
+.kontakt {
+    background: #1e2131;
+    color: #f9f9f9;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2ram;
+}
+
+
+/* .light {
+    color: #f9f9f9;
+} */
+
+
+/* media queris */
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+
+/* ---bootstrap pading fix---*/
+
+[class*="col-"] {
+    padding: 1.2rem;
+}
+
+
+/* Extra small(xs) devices (phones, 576px and down)
+@media only screen and (max-width:576px) {...} 
+
+Small devices(sm) (portrait tablets and large phones, 576px and up)
+@media only screen and (min-width: 576px) {...} 
+
+Medium devices(md) (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...} 
+
+Large devices(lg) (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} 
+
+Extra large devices(xl) (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
