@@ -12,13 +12,12 @@
 body {
     overflow-x: hidden;
     font-family: 'Lora', sans-serif;
-    color: #03091d !important;
-    background-color: #f9f9f9 !important;
 }
 
 .navbar {
+    color: #1e2131;
     text-transform: uppercase;
-    font-weight: 650;
+    font-weight: 700;
     font-size: .8rem;
     letter-spacing: 0.1px;
 }
@@ -42,54 +41,62 @@ li {
     padding-top: .8rem;
 }
 
-.navbar-light,
+
+/* .navbar-light,
 .navbar-nav,
-.nav-link.active,
+.nav-link,
+.active,
 .navbar-light,
-.navbar-nav,
+.navbar-nav, */
+
+.active,
 .nav-link:hover {
-    color: #f2b557;
+    color: #f2b557 !important;
 }
 
+.fa-home,
+.fa-bed,
+.fa-utensils {
+    font-size: 1.3rem;
+}
 
-/* .home-inner img {
+.home-inner img {
     width: 100%;
     max-width: 100%;
     border-radius: 6px;
     margin-top: 1rem;
-} */
+}
 
-.pozadinska_slika {
-    background-image: url("../../img/beograd/Hram_Svetog_Save_Backgraund.jpg");
+
+/* .pozadinska_slika {
+    background: url("../img/beograd/Hram_Svetog_Save_Backgraund.jpg");
     width: 100%;
     max-width: 100%;
-}
+} */
 
 .caption {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 60%;
+    top: 70%;
     color: #f2b557;
+    font-weight: 900;
 }
 
 .caption h1 {
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .btn-rezervacija {
     background-color: #f2b557 !important;
-    color: #1e2131 !important;
-    border: 1px solid #f2b557 !important;
-    border-radius: 4px !important;
+    color: #1e2131;
+    border: 1px solid #f2b557;
 }
 
 .btn-rezervacija:hover,
 .btn-rezervacija:active {
     background-color: #471e39 !important;
-    text-shadow: 3px 3px 6px #03091d4f !important;
-    box-shadow: 5px 5px 10px#03091d4f !important;
-    border: 1px solid#471e39 !important;
+    border: 1px solid#471e39;
     color: #f0ca92 !important;
 }
 
@@ -97,14 +104,15 @@ li {
     background-color: #1e2131 !important;
     color: #f0ca92 !important;
     font-weight: 400;
-    border: 1px solid #1e2131!important;
+    border: 1px solid #1e2131;
 }
 
 .btn-strana:hover,
 .btn-strana:active {
     font-weight: 500;
-    box-shadow: 5px 5px 10px#03091d4f !important;
+    box-shadow: 5px 5px 10px#03091d4f;
     background-color: #471e39 !important;
+    border: 1px solid #1e2131 !important;
 }
 
 .rozle {
@@ -115,7 +123,7 @@ li {
 }
 
 .margina-top {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .img-fluid {
@@ -127,46 +135,51 @@ li {
 .tamna {
     background: #471e39;
     color: #f9f9f9;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-radius: 6px;
 }
 
 .tamni-tekst {
-    color: #1e2131 !important;
-}
-
-.kontakt {
-    background: #1e2131;
-    color: #f9f9f9;
+    color: #1e2131;
 }
 
 .welcome {
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 2ram;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
 }
 
 
-/* .light {
-    color: #f9f9f9;
-} */
+/* .welcome hr {
+    border-top: 2px solid #f9f9f9;
+    /* margin-top: .3rem;
+    margin-bottom: 1rem;} */
 
+
+ .kontakt {
+    background: #1e2131 !important;
+    color: #f9f9f9;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+}
+#ime, #prezime, #email{
+    margin-right: 0.8rem;
+    margin-left: 1rem;
+}
+#broj_ljudi, #vrsta_sobe, #comment{
+    margin-left: 3.8rem;
+    margin-right: 1.5rem;
+}
 
 /* media queris */
-
-@media only screen and (min-width: 576px) {}
-
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 992px) {}
-
+@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 576px) {}
 
 /* ---bootstrap pading fix---*/
-
 [class*="col-"] {
     padding: 1.2rem;
 }
-
 
 /* Extra small(xs) devices (phones, 576px and down)
 @media only screen and (max-width:576px) {...} 
