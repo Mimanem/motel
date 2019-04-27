@@ -1,5 +1,5 @@
     @import url('https://fonts.googleapis.com/css?family=Lora');
-     :root {
+    /* :root {
         --c-kupina: #471e39;
         --c-plava: #5c7da2;
         --c-tamna: #1e2131;
@@ -7,13 +7,20 @@
         --c-zuta: #f2b557;
         --c-tekst: #f3f3ec;
         --c-shadow: #03091d4f;
-    }
+    } */
     
     body {
         overflow-x: hidden;
         font-family: 'Lora', sans-serif;
-        /* position: relative;
-        height: 100%; */
+        position: relative;
+        height: 100%;
+    }
+    
+    .offset:before {
+        display: block;
+        content: "";
+        height: 5rem;
+        margin-top: -4.5rem;
     }
     
     .padding {
@@ -94,18 +101,6 @@
         padding-bottom: 1rem;
         text-shadow: 2px 2px 3px#00030c2f;
     }
-    /* .btn-rezervacija {
-        background-color: #f2b557 !important;
-        color: #1e2131;
-        border: 1px solid #f2b557;
-    }
-    
-    .btn-rezervacija:hover,
-    .btn-rezervacija:active {
-        background-color: #471e39 !important;
-        border: 1px solid#471e39;
-        color: #f0ca92 !important;
-    } */
     
     .btn-strana {
         background-color: #1e2131 !important;
@@ -305,9 +300,9 @@
         .text_text {
             font-size: 115%
         }
-        /* .btn-strana {
+        .btn-strana {
             font-size: 20px;
-        } */
+        }
     }
     /*---bootstrap pading fix---*/
     
@@ -361,4 +356,4 @@ Medium devices(md) (landscape tablets, 768px and up)
 Large devices(lg) (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {...} 
 
-Extra large devices(xl) (large laptops and desktops, 1200px and up) @media only screen and (min-width: 1200px) {...} *
+Extra large devices(xl) (large laptops and desktops, 1200px and up) @media only screen and (min-width: 1200px) {...} */
