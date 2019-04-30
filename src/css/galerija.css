@@ -1,0 +1,24 @@
+.pozadina {
+    background-color: #471e39;
+    border-radius: 6px;
+}
+
+.margina-top {
+    margin-top: 1rem;
+}
+
+.naslov {
+    text-transform: uppercase;
+    color: #f9f9f9;
+}
+
+.naslov-hr {
+    border-top: 1px solid #f9f9f9;
+    width: 50%;
+}
+
+.img-fluid {
+    border: none;
+    padding: 0.8rem;
+    text-shadow: 5px 5px 5px#03091d2f;
+}
