@@ -5,29 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/motel.css">
-    <link rel="icon_xl" sizes="180x180" href="img/favikon/motel_sv_zuta/android-chrome-192x192.png">
-    <link rel="icon_m" type="image/png" sizes="32x32" href="img/favikon/motel_sv_zuta/favicon-32x32.png">
-    <link rel="icon_s" type="image/png" sizes="16x16" href="img/favikon/motel_sv_zuta/favicon-16x16.png">
+    <!-- <link rel="stylesheet" href="./src/css/main.css"> -->
+    <link rel="stylesheet" href="./css/motel.css">
+    <link rel="stylesheet" href="./css/galerija.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favikon/motel_sv_zuta/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favikon/motel_sv_zuta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favikon/motel_sv_zuta/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Galerija</title>
-</head>
-
-<body>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis, inventore itaque ipsam laborum nostrum, veritatis unde nulla neque saepe distinctio, eum quisquam. Iure nobis harum quo sit repellat officia.</p>
-
-    <script src="./src/js/main.js"></script>
-    <script src="./src/js/motel.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Galerija</title>
+</head>
+
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <div class="container">
+        <div id="home"></div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../img/logo-motel_belgrade.png" alt="brand_logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fas fa-home active " href="../motel.html" data-scroll></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt" data-scroll>Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid caption text-center">
+            <h1 class="display-2">motelBelgrade</h1>
+            <h3 class="display-4">dobrodošli</h3>
+        </div>
+        <main>
+            <div id="galerija" class="galery pozadina">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="naslov text-center margina-top">galerija</h3>
+                        <hr class="naslov-hr">
+                        <div class="row margina-top">
+                            <div class=" col-xs-12 col-md-4"><img alt="picture" src="../img/restoran/domaca_kafica2.jpg" class="img-fluid"></div>
+                            <div class="col-md-4"><img alt="picture" src="../img/smestaj/soba.jpg" class="img-fluid" /></div>
+                            <div class="col-md-4"><img alt="picture" src="../img/restoran/mesano_meso.jpg" class="img-fluid" /> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><img alt="picture" src="../img/smestaj/dvokrevetna soba1.jpg" class="img-fluid" /></div>
+                            <div class="col-md-4"> <img alt="picture" src="../img/smestaj/kupatilo1.jpg" class="img-fluid" /></div>
+                            <div class="col-md-4"><img alt="picture" src="../img/smestaj/jednokrevetna_soba.jpg" class="img-fluid" /></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"> <img alt="picture" src="../img/restoran/predjelo.jpg" class="img-fluid" /></div>
+                            <div class="col-md-4"><img alt="picture" src="../img/restoran/restoran.jpg" class="img-fluid" /></div>
+                            <div class="col-md-4"><img alt="picture" src="../img/beograd/savamala.jpg" class="img-fluid" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="kontakt" class="offset">
+                <div class="container container-fluid padding">
+                    <div class="row text-center kontakt margina-top">
+                        <div class="container col-md-12 margina-top padding">
+                            <img class="logo" src="../img/logo-motel_belgrade.png" alt="logo">
+                            <div class="col-12">
+                                <hr class="light">
+                                <h5 class="zuti_tekst">kontaktirajte nas</h5>
+                                <hr class="light">
+                            </div>
+                            <p>tel: 011/555-7771</p>
+                            <p>motel.belgrade@gmail.com</p>
+                            <p>Dušanova 33, Beograd, Srbija</p>
+                            <div class="col-12 social">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-google-plus"></a>
+                                <a href="#" class="fab fa-instagram"></a>
+                                <a href="#" class="fab fa-youtube"></a>
+                            </div>
+                        </div>
+                        <div class="container col-md-12">
+                            <hr class="light">
+                            <h5 class="zuti_tekst">radno vreme</h5>
+                            <hr class="light">
+                            <h6>Recepcija</h6>
+                            <p>svaki dan 0-24h</p>
+                            <h6>Restoran</h6>
+                            <p>svaki dan 8-23h</p>
+                        </div>
+                        <div class="col-12">
+                            <hr class="light-100">
+                            <h6 class="zuti_tekst">&copy; by multimrkvica</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/motel.js"></script>
+
 </body>
 
 </html>
