@@ -13,13 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous"></script>
     <title>motel_index</title>
 
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
     <div class="container">
-        <div id="home"></div>
         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="img/logo-motel_belgrade.png" alt="brand_logo"></a>
@@ -56,6 +58,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="landing">
             <div class="home-wrap">
                 <div class="home-inner">
@@ -66,9 +69,10 @@
             <h1 class="display-2">motelBelgrade</h1>
             <h3 class="display-4">dobrodošli</h3>
         </div>
+
         <div id="smestaj" class="offset">
             <div class="container-fluid padding">
-                <div class="row padding rozle margina-top">
+                <div class="row padding zuta-pozadina margina-top">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
                         <h2 class="text">Smeštaj</h2>
                         <p class="text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam. Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit eos laboriosam rerum.</p>
@@ -83,7 +87,7 @@
         </div>
         <div id="restoran" class="offset">
             <div class="container-fluid padding">
-                <div class="row padding rozle">
+                <div class="row padding zuta-pozadina">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
                         <h2 class="text">Restoran</h2>
                         <p class="text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam. Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit eos laboriosam rerum.</p>
@@ -98,7 +102,7 @@
         </div>
         <div id="aktivnosti" class="offset">
             <div class="container-fluid padding">
-                <div class="row padding rozle">
+                <div class="row padding zuta-pozadina">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
                         <h2 class="text">Aktivnosti</h2>
                         <p class="text_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam. Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit eos laboriosam rerum.</p>
@@ -112,7 +116,7 @@
             </div>
         </div>
         <div id="recenzije" class="offset">
-            <div class="container-fluid padding tamna">
+            <div class="container-fluid padding kupina-pozadina">
                 <div class="container-fluid padding">
                     <div class="row text-center">
                         <div class="col-12 ">
@@ -150,56 +154,59 @@
             </div>
         </div>
         <div id="rezervacija" class="offset">
-            <div class="container-fluid padding tamna margina-top">
+            <div class="container-fluid padding kupina-pozadina margina-top">
                 <div class="row welcome text-center">
                     <div class="col-12">
                         <h1 class="col-12 rez">Rezervacija forma</h1>
-                        <button class="btn btn-lg btn-strana margina-top" data-toggle="collapse" data-target="#rezervisi">REZERVIŠI</button>
+                        <!-- <a href="./src/rezervacija.html" id="rezervacija_dugme" class="btn btn-lg btn-strana margina-top">REZERVIŠI</a>
+                        <p class="margina-top">ako želite da rezervišete smeštaj kod nas kliknite na dugme</p> -->
+                        <button id="rezervacija_dugme" class="btn btn-lg btn-strana margina-top" data-toggle="collapse" data-target="#rezervisi">REZERVIŠI</button>
                         <p class="margina-top">ako želite da rezervišete smeštaj kod nas kliknite na dugme</p>
                         <div id="rezervisi" class="collapse">
                             <h2 class="text-left">popunite formu:</h2>
-                            <form>
+                            <form id="forma">
                                 <div class="form-inline margina-top">
                                     <label for="email">email:</label>
-                                    <input type="text" class="form-control col-md-12" id="email" placeholder="text" name="unesi_email">
+                                    <input type="text" class="form-control col-md-12" id="email" placeholder="text" name="unesi_email" required="">
+                                    <span class="error_form" id="email_error_poruka"></span>
+                                </div>
+                                <div class="form-group form-inline margina-top ">
+                                    <label for="ime">Ime:</label>
+                                    <input type="text" class="form-control col-md-12" id="ime" placeholder="text" name="unesi_ime" required="">
+                                    <span class="error_form" id="ime_error_poruka"></span>
                                 </div>
                                 <div class="form-inline margina-top ">
-                                    <label for="ime">Ime:</label>
-                                    <input type="text" class="form-control col-md-12 " id="ime" placeholder="text" name="unesi_ime">
-
                                     <label for="prezime">Prezime:</label>
-                                    <input type="text" class="form-control col-md-12 " id="prezime" placeholder="text" name="prezime">
-
-
+                                    <input type="text" class="form-control col-md-12 " id="prezime" placeholder="text" name="prezime" required="">
+                                    <span class="error_form" id="prezime_error_poruka"></span>
                                 </div>
                                 <div class="form-inline margina-top">
-
                                     <select id="broj_ljudi" class="custom-select col-xs-12 col-sm-12 col-md-12">
-                                            <option selected>izaberite broj ljudi</option>
-                                            <option value="jedna_osoba">jedna osoba</option>
-                                            <option value="dve_osobe">dve osobe</option>
-                                            <option value="tri_osobe">tri osobe</option>
-                                            <option value="cetiri_oobe">četiri osobe</option>
-                                            <option value="pet_i_više_osoba">pet i više osoba</option>
-                                        </select>
+                                        <option selected>izaberite broj ljudi</option>
+                                        <option value="jedna_osoba">jedna osoba</option>
+                                        <option value="dve_osobe">dve osobe</option>
+                                        <option value="tri_osobe">tri osobe</option>
+                                        <option value="cetiri_oobe">četiri osobe</option>
+                                        <option value="pet_i_više_osoba">pet i više osoba</option>
+                                    </select>
 
                                     <select id="vrsta_sobe" class="custom-select col-md-12 margina-top">
-                                            <option selected>izaberite sobu</option>
-                                            <option value="jednokrevetna">jednokrevetna</option>
-                                            <option value="dvokrevetna">dvokrevetna</option>
-                                            <option value="apartman">apartman</option>
-                                        </select>
+                                        <option selected>izaberite sobu</option>
+                                        <option value="jednokrevetna">jednokrevetna</option>
+                                        <option value="dvokrevetna">dvokrevetna</option>
+                                        <option value="apartman">apartman</option>
+                                    </select>
                                 </div>
                                 <div class="form-inline margina-top">
 
                                     <textarea class="form-control col-xs-12 col-sm-12 col-md-12" rows="5" id="comment">Unesite komentar</textarea>
                                 </div>
-
-                                <button type="submit" class="btn btn-strana btn-lg margina-top text-center">POŠALJI</button>
+                                <!-- <div id="validationMessage"></div> -->
+                                <button id="btn_forma" type="submit" class="btn btn-strana btn-lg margina-top text-center">POŠALJI</button>
                             </form>
                         </div>
+                        <hr>
                     </div>
-                    <hr>
                 </div>
             </div>
         </div>
@@ -245,15 +252,11 @@
     </div>
     <!-- GALERIJA NOVA STRANICA -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous"></script>
 
-    <script src="./src/js/main.js "></script>
+
+    <script src="./src/js/main.js"></script>
     <script src="./src/js/motel.js "></script>
-    <!-- <script>
-        var scroll = new SmoothScroll('a[href*="#"][data-scroll]');
-    </script> -->
+    <script src="./src/js/validacija.js "></script>
 </body>
 
 </html>
