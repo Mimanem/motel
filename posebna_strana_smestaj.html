@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="./src/css/main.css"> -->
-    <link rel="stylesheet" href="./src/css/motel.css">
+    <link rel="stylesheet" href="src/css/motel.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favikon/motel_sv_zuta/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favikon/motel_sv_zuta/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favikon/motel_sv_zuta/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous"></script>
+
     <title>motelBelgrade</title>
 </head>
 
@@ -23,8 +27,8 @@
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="img/logo-motel_belgrade.png" alt="brand_logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -44,30 +48,62 @@
             <h1 class="display-2">motelBelgrade</h1>
             <h3 class="display-4">dobrodošli</h3>
         </div>
-        <div id="smestaj">
-            <div class="container-fluid padding">
-                <div class="row padding rozle margina-top">
-                    <div class="col-xs-12 col-md-12">
-                        <img src="img/smestaj/soba.jpg" class="img-fluid mx-auto d-block" alt="Smeštaj ">
+        <main>
+            <div id="smestaj">
+                <div class="container-fluid padding">
+                    <div class="row padding zuta-pozadina margina-top">
+                        <div id="slider">
+                            <div id="holder" class="col-xs-12 col-md-12">
+                                <!-- <div class="slike_slider">
+                                    <div><img src="img/smestaj/1_apartman.jpg" class="img-fluid mx-auto d-block" alt="Smeštaj "></div>
+                                </div> -->
+
+                                <div id="slajder" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#slajder" data-slide-to="0" class="active"></li>
+                                        <li data-target="#slajder" data-slide-to="1"></li>
+                                        <li data-target="#slajder" data-slide-to="2"></li>
+                                        <li data-target="#slajder" data-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="img-fluid mx-auto d-block w-100" src="img/smestaj/1_apartman.jpg" alt="Smeštaj">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid mx-auto d-block w-100" src="img/smestaj/2_dvokrevetna_soba.jpg" alt="Smeštaj">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid mx-auto d-block w-100" src="img/smestaj/3_jednokrevetna_soba.jpg" alt="Smeštaj">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid mx-auto d-block w-100" src="img/smestaj/4_kupatilo.jpg" alt="Smeštaj">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#slajder" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#slajder" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-fluid padding ">
+                    <div class="row padding zuta-pozadina ">
+                        <div class="col-xs-12 col-md-12 ">
+                            <h2 class="text text-center">Smeštaj</h2>
+                            <p class="text_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam. Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit eos laboriosam rerum.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="container-fluid padding ">
-                <div class="row padding rozle ">
-                    <div class="col-xs-12 col-md-12 ">
-                        <h2 class="text text-center">Smeštaj</h2>
-                        <p class="text_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda asperiores dicta dignissimos numquam. Corrupti id culpa porro, accusantium quibusdam animi harum itaque dignissimos, dolore nulla nemo odit eos laboriosam rerum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-
+        </main>
         <footer>
             <div id="kontakt" class="offset">
                 <div class="container container-fluid padding ">
@@ -101,13 +137,15 @@
                         </div>
                         <div class="col-12 ">
                             <hr class="light-100 ">
-                            <h6 class="zuti_tekst ">&copy; by multimrkvica</h6>
+                            <h6 class="zuti_tekst">&copy; by multimrkvica</h6>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/motel.js"></script>
 </body>
 
 </html>
